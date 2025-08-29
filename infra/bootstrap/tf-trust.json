@@ -1,0 +1,12 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [{
+    "Sid": "AllowHumanToAssume",
+    "Effect": "Allow",
+    "Principal": {
+      "AWS": "arn:aws:iam::142021135755:user/admin-yusef"
+    },
+    "Action": "sts:AssumeRole"
+  }]
+}
+
