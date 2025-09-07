@@ -27,6 +27,8 @@ module "vpc" {
   azs             = local.azs
   public_subnets  = local.public_subnets
   private_subnets = local.private_subnets
+  # Ensure public subnets auto-assign public IPs
+  map_public_ip_on_launch = true
 
   enable_nat_gateway   = false # cost control
   single_nat_gateway   = false
